@@ -1,0 +1,52 @@
+@font-face {
+    font-family: a;
+    src: url(.//NeueMachina-Regular.otf);
+}
+@font-face {
+    font-family: b;
+    src: url(./Satoshi-Bold.otf);
+}
+*::selection{
+    background-color: var(--salmon);
+    color: #FFF;
+}
+.vdo{
+    clip-path: circle(var(--clip) at 50% 50%);
+}
+::-webkit-scrollbar{
+    display: none;
+}
+:root{
+    --black:black;
+    --salmon:#EF9D71;
+    --cyan:#AEDEE0;
+    --white:#FFF;
+}
+
+.main{
+    background-color: rgb(243, 242, 242);
+}
+body[theme="black"]{
+    background-color: var(--black);
+}
+body[theme="black"] .section{
+    color: #FFF;
+}
+body[theme="cyan"]{
+    background-color:var(--cyan);
+}
+body[theme="cyan"] .section{
+    color: var(--black);
+}
+body[theme="salmon"]{
+    background-color:var(--salmon);
+}
+body[theme="salmon"] .section{
+    color: var(--black);
+}
+body[theme="white"]{
+    background-color:var(--white);
+}
+body[theme="white"] .section{
+    color: var(--black);
+}
